@@ -1,17 +1,16 @@
 ---
-id: doc1
-title: Genel Bilgi
-sidebar_label: Genel Bilgi
-slug: /
+id: sss2
+title: Ücretsiz Web Sitesi
+sidebar_label: Ücretsiz Web Sitesi
 ---
 
-## Nasıl kayıt olurum? 
+## Ücretsiz web sitesi sistemden ayrıldığımızda nasıl çalışacak?
 
 Mekanlar ve Etkinlikler için ayrı ayrı 3 üyelik planımız bulunmaktadır. Site ziyaretçileri ve uygulamayı kullanan kullanıcıların üyelik için herhangi bir ödeme yapmaları gerekli değildir.
 
 ---
 
-## Nasıl çalışır?
+## Web sitesi için extra ödeme yapmak gerekiyor mu?
 
 İşletme sahipleri mekanlarını listelemek için portalımıza üye olduktan sonra ödemeyi gerçekleştirip işletmelerini sitemizi ekleyebilirler.
 

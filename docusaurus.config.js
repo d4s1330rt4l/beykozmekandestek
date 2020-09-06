@@ -1,29 +1,29 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'BeykozMekan - Yardım',
+  tagline: 'İşletmeler ve Kullanıcılar için yardım',
+  url: 'https://yardim.beykozmekan.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'erobus', // Usually your GitHub org/user name.
+  projectName: 'beykozmekandestek', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'BeykozMekan - Yardım',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'BeykozMekan - Yardım',
         src: 'img/logo.svg',
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Yardım',
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/erobus/beykozmekandestek',
           label: 'GitHub',
           position: 'right',
         },
@@ -33,37 +33,37 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Yardım',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Genel Bilgi',
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
+              label: 'Kullanıcı Ayarları',
               to: 'docs/doc2/',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Topluluk',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'BeykozMekan',
+              href: 'https://beykozmekan.com',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Alternatik',
+              href: 'https://alternatik.com',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Facebook',
+              href: 'https://facebook.com/beykozmekan',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Diğer',
           items: [
             {
               label: 'Blog',
@@ -71,12 +71,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/erobus/beykozmekandestek',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} BeykozMekan - Alternatik ürünüdür.`,
     },
   },
   presets: [
@@ -87,13 +87,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/erobus/beykozmekandestek/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/erobus/beykozmekandestek/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

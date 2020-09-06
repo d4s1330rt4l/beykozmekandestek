@@ -8,32 +8,30 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Premium Kent Rehberi',
+    imageUrl: 'img/prem_kent_rehberi.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        İşletmeler ve kullanıcılar için site ve uygulama kullanımında yardımcı
+        olabilecek ipuçları.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Yardımcı Araçlar',
+    imageUrl: 'img/yardimci_araclar.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        İşletmeler için grafik ve diğer çeşitli materyaller.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Profesyonel Destek',
+    imageUrl: 'img/pro_destek.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Destek ekibimiz sorularınıza yardımcı olabilmek için bir tık uzağınızda.
       </>
     ),
   },
@@ -58,9 +56,9 @@ function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+    <Layout  
+      title={`Premium Kent Rehberi ${siteConfig.title}`}
+      description="BeykozMekan Yardım merkezi">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -68,11 +66,11 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                'button button--outline button--secondary button--lg',
+                'button button--outline button--primary button--warning button--lg',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              Yardım Merkezi
             </Link>
           </div>
         </div>
