@@ -7,17 +7,22 @@
 
 /* You can override the default Infima variables here. */
 :root {
---ifm-color-primary: #ffd43b;
---ifm-color-primary-dark: #fcc419;
---ifm-color-primary-darker: #fab005;
---ifm-color-primary-darkest: #fab005;
---ifm-color-primary-light: #ffe066;
---ifm-color-primary-lighter: #ffec99;
---ifm-color-primary-lightest: #fff3bf;
---ifm-menu-color: #4f4304;
+--ifm-color-primary: #ffde22;
+--ifm-color-primary-dark: #ffcf21;
+--ifm-color-primary-darker: #ffc021;
+--ifm-color-primary-darkest: #ffb121;
+--ifm-color-primary-light: #ffed21;
+--ifm-color-primary-lighter: #fffb21;
+--ifm-color-primary-lightest: #f4ff21;
+--ifm-menu-color: #ffde22;
 --ifm-menu-color-background-active: #000;
---ifm-menu-color-background-hover: #ffde22;
+--ifm-menu-color-background-hover: #000;
 --ifm-code-font-size: 95%;
+--ifm-navbar-search-input-placeholder :'Ara';
+}
+
+.DocSearch-Button-Placeholder {
+	placeholder: 'Ara';
 }
 
 .docusaurus-highlight-code-line {
@@ -34,4 +39,9 @@
 .button--outline {
 --ifm-button-background-color: #transparent;
 --ifm-button-color: #000;
+}
+
+.button:hover {
+  background-color: #000;
+  color: #ffde22;
 }

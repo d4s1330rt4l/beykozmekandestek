@@ -70,7 +70,7 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Yardım Merkezi
+              Giriş
             </Link>
           </div>
         </div>

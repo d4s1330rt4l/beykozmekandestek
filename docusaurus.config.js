@@ -1,30 +1,67 @@
 module.exports = {
   title: 'BeykozMekan - Yardım',
-  tagline: 'İşletmeler ve Kullanıcılar için yardım',
+  tagline: 'İşletmeler ve Kullanıcılar için Yardım Merkezi',
   url: 'https://yardim.beykozmekan.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'erobus', // Usually your GitHub org/user name.
   projectName: 'beykozmekandestek', // Usually your repo name.
+  plugins: [
+  [
+  '@docusaurus/plugin-ideal-image',
+  {
+  quality: '70',
+  max: '1030',
+  min: '640',
+  steps: '2',
+  },
+  ],
+  ],
   themeConfig: {
+      algolia: {
+      apiKey: '55e0d9f8f54575d0d1d53648f436b745',
+      indexName: 'beykozmekan_yardim',
+      searchParameters: {"facetFilters":["lang:tr"]}, // Optional (if provided by Algolia)
+      placeholder: 'Ara'
+      },
+      colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: true,
+      switchConfig: {
+        darkIcon: '🌙',
+        lightIcon: '\u2600',
+        darkIconStyle: {
+          marginLeft: '2px',
+        },
+        lightIconStyle: {
+          marginLeft: '1px',
+        },
+      },
+    },
     navbar: {
-      title: 'BeykozMekan - Yardım',
+      title: 'BeykozMekan',
       logo: {
-        alt: 'BeykozMekan - Yardım',
+        alt: 'BeykozMekan - Yardım Merkezi',
         src: 'img/logo.svg',
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Yardım',
+          label: 'Yardım Merkezi',
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/erobus/beykozmekandestek',
-          label: 'GitHub',
+          to: 'portfolyo/',
+          label: 'Portfolyo',
+          position: 'left',
+        },
+        {
+          href: 'https://beykozmekan.com',
+          label: 'Anasayfa',
           position: 'right',
         },
       ],
@@ -43,6 +80,10 @@ module.exports = {
               label: 'Kullanıcı Ayarları',
               to: 'docs/doc2/',
             },
+            {
+              label: 'Blog',
+              to: 'blog',
+            },
           ],
         },
         {
@@ -53,22 +94,18 @@ module.exports = {
               href: 'https://beykozmekan.com',
             },
             {
-              label: 'Alternatik',
-              href: 'https://alternatik.com',
-            },
-            {
               label: 'Facebook',
               href: 'https://facebook.com/beykozmekan',
+            },
+            {
+              label: 'Alternatik',
+              href: 'https://alternatik.com',
             },
           ],
         },
         {
-          title: 'Diğer',
+          title: 'Bağlantılar',
           items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/erobus/beykozmekandestek',
